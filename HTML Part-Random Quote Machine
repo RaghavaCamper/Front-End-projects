@@ -1,0 +1,22 @@
+<body>
+  <div id="container">
+   <div class="row">
+   <div class="col-sm-2"></div>
+    <div class="col-sm-8">
+    <div id="text-container">
+      <div>
+      
+      <h2><em><span id="quote"></span></em></h2>
+     </div>
+    <div>
+      <h4>-<span id="author"></span></h4>
+    </div>
+      </div><!-- end of text container-->
+      <div id="buttons">
+        <a target="button" target="_blank" id="twitter">Tweet</a>
+        
+      </div>
+    <button class="btn btn-default" id="generator">New Quote</button>
+      
+  </div>
+</body>
