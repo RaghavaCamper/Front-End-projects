@@ -1,44 +1,85 @@
-.btn-default,btn-default:focus{
-  background: #e74c3c;
-  color: #ecf0f1;
-  font-weight:bold;
-  width: 100%;
-  
+
+.buttons{
+  font-size:20px;
+  padding-top: 300px;
 }
-.btn-default:hover{
-  background: #34495e;
-  color: #f1c40f;
+#quote{
+  font-weight:bold;
+  color: black;
+}
+#author{
+  font-weight:bold;
+  color: maroon;
+  margin-left: 1000px;
+}
+#generator,#generator:focus {
+  width:80%;
+  margin-left: 180px;
+  margin-top: -160px;
+  background: #e74c3c;
+  color: white;
+  border-width: 2px;
+  border-color: grey;
+  font-weight:bold;
+  height:42px;
+}
+#generator:hover{
+  background: black;
+  color: gold;
 }
 #text-container{
- min-height: 170px;
+  margin-top: 200px;
+  padding-left: 60px;
+  min-height: 50px;
 }
-body{
-  background: url("data:image/jpeg;base64,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") no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-#container{
-  color: black;
-  max-width: 1000px;
-  margin: 30px auto;
-  padding: 15px;
- 
-}
-#buttons{
-  font-size: 20px;
-}
-#buttons > a {
-  background: teal;
+#twitter{
+   font-size: 30px;
+  padding-left: 16px;
+  margin-top:-158px;
+  margin-left: 5px;
+  background: #55acee;
   display: block;
   width: 60px;
   height: 40px;
   border-radius: 4px;
   cursor: pointer;
   color: black;
-  margin: 5px 0;
+  
 }
-#buttons > a:hover{
-background:grey; 
+#tumblr{
+  font-size: 30px;
+  padding-left:20px;
+  margin-left: 90px;
+  margin-top:-40px;
+  background: #000080;
+  display: block;
+  width: 60px;
+  height: 40px;
+  border-radius: 4px;
+  cursor: pointer;
+  color: white;
+}
+body{
+   background: url('https://4kwallpapers.co/wp-content/uploads/2015/07/Game-Of-Thrones-Kings-Landing-Wallpaper.jpg') no-repeat center center fixed; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+
+ 
+}
+
+
+#facebook{
+  font-size: 30px;
+  padding-left: 16px;
+  margin-left: 115px;
+  margin-top:-40px;
+  background: #3b5998;
+  display: block;
+  width: 60px;
+  height: 40px;
+  border-radius: 4px;
+  cursor: pointer;
+  color: white;
 }
